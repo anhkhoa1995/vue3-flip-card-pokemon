@@ -44,7 +44,7 @@ const props = defineProps({
 
 const emit = defineEmits(['onFlip'])
 
-const urlImage = computed(() => new URL('../assets/' + props.imgBackFaceUrl, import.meta.url).href)
+const urlImage = computed(() => './' + props.imgBackFaceUrl)
 
 const isFlipped = ref(false)
 const isDisabled = ref(false)
@@ -112,7 +112,7 @@ defineExpose({ onFlipBackCard, onDisabledMode })
 
   .card__face--front {
     .card__content {
-      background: url('../assets/images/icon_back.png') no-repeat center center;
+      background: url('./images/icon_back.png') no-repeat center center;
       background-size: 40px 40px;
       height: 100%;
       width: 100%;
