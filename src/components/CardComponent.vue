@@ -14,7 +14,7 @@
       @click="onToggleFlipCard(props.cardsNumber)"
     >
       <div class="card__face card__face--front">
-        <div class="card__content"></div>
+        <div class="card__content" :style="{ backgroundImage: `url(./images/icon_back.png)` }"></div>
       </div>
       <div class="card__face card__face--back">
         <div class="card__content" :style="{ backgroundImage: `url(${urlImage})` }"></div>
@@ -112,7 +112,6 @@ defineExpose({ onFlipBackCard, onDisabledMode })
 
   .card__face--front {
     .card__content {
-      background-image: url('./images/icon_back.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 40px 40px;
