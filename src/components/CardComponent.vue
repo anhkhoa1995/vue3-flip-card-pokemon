@@ -112,7 +112,9 @@ defineExpose({ onFlipBackCard, onDisabledMode })
 
   .card__face--front {
     .card__content {
-      background: url('./images/icon_back.png') no-repeat center center;
+      background-image: url('./images/icon_back.png');
+      background-repeat: no-repeat;
+      background-position: center;
       background-size: 40px 40px;
       height: 100%;
       width: 100%;
