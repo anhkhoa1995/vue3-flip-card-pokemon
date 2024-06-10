@@ -1,0 +1,22 @@
+/* Variables CSS */
+:root {
+  --dark: #212121;
+  --light: #f3f3f3;
+  --font: 'Honk', system-ui;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    'MORF' 15,
+    'SHLN' 50;
+  font-size: 16px;
+  width: 100%;
+}
